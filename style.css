@@ -17,6 +17,7 @@
 }
 
 .Result {
+    width: 50%;
     color: hsl(241, 100%, 89%);
     display: flex;
     flex-direction: column;
@@ -73,6 +74,7 @@
 }
 
 .Sum {
+    width: 50%;
     padding: 20px;
     box-shadow: 25px 25px 50px black;
     border-radius: 20px;
@@ -191,4 +193,42 @@ img {
 
 .ratio {
     color: black;
+}
+
+@media (max-width:675px) {
+    body {
+        height: 70vh;
+    }
+
+    .main {
+        width: 160%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 10px;
+    }
+
+
+    .re,
+    .vis,
+    .mem,
+    .ver {
+        width: 100%;
+    }
+}
+
+@media (max-width:375px) {
+    .cir {
+        width: 40px;
+        height: 40px;
+        margin: 0px;
+    }
+
+    .cir span {
+        margin-top: 20px;
+        font-size: 1em;
+    }
+
+    .cir p {
+        font-size: 0.9em;
+    }
 }
